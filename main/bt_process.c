@@ -617,8 +617,6 @@ static void bt_init(){
 
 void bt_process_task(void *arg){
 
-    btQueue = xQueueCreate(5,(sizeof(TS_PT_QUEUE)));
-
     bt_init();
 
     while(1){
